@@ -8,7 +8,7 @@ Enunciado: exercicio-newsflow.pdf (fornecido à parte; não incluído no reposit
 
 - Serviço didático **em memória**, relógio controlado por cenário, World isolado e personas de teste; não há autenticação integrada, servidor, banco, envio real nem teste de interface.
 - RN01: edição nasce em rascunho; salvamentos em ciclos periódicos de 30 segundos, não por inatividade (decisão confirmada pela usuária); cada salvamento gera versão numerada; retêm-se as últimas 20; restauração de versão disponível não apaga posteriores. A divergência entre quadro RN01 e exemplo de história do PDF está registrada em [`../docs/historias.md`](../docs/historias.md).
-- RN02 **parcial**: submissão, aprovação independente e reprovação comentada. Não se implementou envio/agendamento nem seu bloqueio sem aprovação. RN03–RN08 estão fora do escopo pelas dependências de operação de envio, público, consentimento ou notificações descritas no [README](../README.md#fora-de-escopo).
+- RN02 **parcial**: submissão, aprovação independente e reprovação comentada. Não se implementou envio/agendamento nem seu bloqueio sem aprovação.
 - A restauração em estados que não sejam `rascunho` não está coberta pelas features: o PDF não a restringe, mas o domínio atual em `../src/newsflow.js` a rejeita. Não tratar essa restrição de implementação como regra aprovada; caso esse fluxo entre no escopo, requer decisão de produto e teste.
 
 ## Histórias e evidências

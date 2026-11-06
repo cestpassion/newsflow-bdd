@@ -41,17 +41,6 @@ Saída de `npm test` registrada em [`relatorios/execucao.txt`](relatorios/execuc
 
 `npm run test:dry` terminou com código 0: **23 cenários e 149 passos identificados**, marcados como `skipped` porque esse comando não executa os passos. O resultado de execução está no relatório [HTML](relatorios/cucumber-report.html) e no [JSON](relatorios/cucumber-report.json) de `npm test`.
 
-## Fora de escopo
-
-- **RN02, bloqueio de envio/agendamento sem aprovação:** US04 cobre submissão e decisão editorial, não implementa envio/agendamento nem testa o bloqueio de disparo. Portanto RN02 está **parcialmente** coberta.
-- **RN03, agendamento:** horários, reagendamento e cancelamento exigem fluxo de operação do gestor além das quatro histórias.
-- **RN04, segmentação:** escolha de público e deduplicação exigem dados e critérios de assinantes não modelados neste recorte.
-- **RN05, frequência:** limite semanal exige histórico de entregas por assinante, ausente neste domínio.
-- **RN06, descadastro:** opt-out e duplo opt-in dependem de gestão de consentimento, fora do fluxo editorial.
-- **RN07, falhas:** tentativas, bounces e tratamento de falha exigem a operação de entrega, não simulada aqui.
-- **RN08, push:** janela de silêncio e limite diário dizem respeito às notificações, não às versões/revisões.
-- Interface visual, autenticação real, persistência externa e envio efetivo não são exercitados: os testes verificam apenas o serviço didático em memória.
-
 ## Referências
 
 - Enunciado: exercicio-newsflow.pdf (fornecido à parte; não incluído no repositório).

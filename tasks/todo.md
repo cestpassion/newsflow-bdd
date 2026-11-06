@@ -17,7 +17,7 @@ Os itens concluídos têm evidências vinculadas. Veja o [plano de cobertura](pl
 - [x] Executar `npm run test:dry` (código 0): **23 cenários/149 passos skipped**, sem indefinidos ou pendentes; [`../relatorios/dry-run.txt`](../relatorios/dry-run.txt), [`../relatorios/dry-run.json`](../relatorios/dry-run.json) e [`../relatorios/dry-run.html`](../relatorios/dry-run.html).
 - [x] Executar `npm test` (código 0): **23 cenários/149 passos passed**; [`../relatorios/execucao.txt`](../relatorios/execucao.txt), [`../relatorios/cucumber-report.json`](../relatorios/cucumber-report.json) e [`../relatorios/cucumber-report.html`](../relatorios/cucumber-report.html).
 - [x] Disponibilizar os relatórios JSON e HTML com as quatro features: [`../relatorios/cucumber-report.json`](../relatorios/cucumber-report.json) e [`../relatorios/cucumber-report.html`](../relatorios/cucumber-report.html).
-- [x] Documentação das US01–US04, resultado de 23 cenários/149 passos e limites de cobertura em [`../README.md`](../README.md) e [`../docs/historias.md`](../docs/historias.md).
+- [x] Documentação das US01–US04 e resultado de 23 cenários/149 passos em [`../README.md`](../README.md); critérios e limites de cobertura em [`../docs/historias.md`](../docs/historias.md).
 
 ## Limites de cobertura
 
