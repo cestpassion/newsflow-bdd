@@ -2,7 +2,7 @@
 
 **Bruna Furtado e Izadora Galarza | 05/11/2026**
 
-Entrega didática de **quatro histórias (US01–US04)**, uma funcionalidade executável por história: rascunho, versões, restauração e revisão editorial. São **23 cenários executáveis e 149 passos**, conforme a execução local registrada em [`relatorios/execucao.txt`](relatorios/execucao.txt). Os cenários de esquema contam como casos distintos. Consulte [histórias, critérios e limites](docs/historias.md).
+Entrega de **quatro histórias (US01–US04)**, uma funcionalidade por história: rascunho, versões, restauração e revisão editorial. A suíte Cucumber.js executou **23 cenários e 149 passos com sucesso**, conforme [`relatorios/execucao.txt`](relatorios/execucao.txt). Os exemplos dos esquemas de cenário contam como casos distintos. Consulte [histórias, critérios e limites](docs/historias.md).
 
 ## Executar
 
@@ -21,12 +21,12 @@ Entrega didática de **quatro histórias (US01–US04)**, uma funcionalidade exe
 | [`features/step_definitions/newsflow.steps.js`](features/step_definitions/newsflow.steps.js) | Steps com verificações usando `node:assert/strict` |
 | [`features/support/world.js`](features/support/world.js), [`src/newsflow.js`](src/newsflow.js) | Estado por cenário e domínio em memória com relógio controlado |
 | [`cucumber.js`](cucumber.js) | Seleção das features e formatos de relatório |
-| [`relatorios/execucao.txt`](relatorios/execucao.txt), [`relatorios/cucumber-report.json`](relatorios/cucumber-report.json), [`relatorios/cucumber-report.html`](relatorios/cucumber-report.html) | Saída de `npm test` e relatórios da suíte atual |
+| [`relatorios/execucao.txt`](relatorios/execucao.txt), [`relatorios/cucumber-report.json`](relatorios/cucumber-report.json), [`relatorios/cucumber-report.html`](relatorios/cucumber-report.html) | Saída de `npm test` e relatórios da suíte |
 | [`relatorios/dry-run.txt`](relatorios/dry-run.txt), [`relatorios/dry-run.json`](relatorios/dry-run.json), [`relatorios/dry-run.html`](relatorios/dry-run.html) | Saída e relatórios de `npm run test:dry` |
 
-## Resultado local
+## Resultado dos testes
 
-Saída de `npm test` registrada em `relatorios/execucao.txt` (05/11/2026):
+Saída de `npm test` registrada em [`relatorios/execucao.txt`](relatorios/execucao.txt) (05/11/2026):
 
 ```text
 > newsflow-bdd-bruna@1.0.0 test
@@ -39,7 +39,7 @@ Saída de `npm test` registrada em `relatorios/execucao.txt` (05/11/2026):
 0m 0.073s (0m 0.009s executing your code)
 ```
 
-`npm run test:dry` terminou com código 0: **23 scenarios (23 skipped), 149 steps (149 skipped)**. `skipped` é esperado porque o dry-run não executa os passos; a aprovação efetiva é demonstrada por `npm test`. Os JSONs indicam quatro features, 23 cenários, 149 passos aprovados na execução normal e 149 ignorados no dry-run. Os HTMLs gerados contêm as quatro features; não são resultados de testes de interface nem de execução no Studio.
+`npm run test:dry` terminou com código 0: **23 cenários e 149 passos identificados**, marcados como `skipped` porque esse comando não executa os passos. O resultado de execução está no relatório [HTML](relatorios/cucumber-report.html) e no [JSON](relatorios/cucumber-report.json) de `npm test`.
 
 ## Fora de escopo
 
@@ -52,10 +52,7 @@ Saída de `npm test` registrada em `relatorios/execucao.txt` (05/11/2026):
 - **RN08, push:** janela de silêncio e limite diário dizem respeito às notificações, não às versões/revisões.
 - Interface visual, autenticação real, persistência externa e envio efetivo não são exercitados: os testes verificam apenas o serviço didático em memória.
 
-## Fontes e alcance da evidência
-
-Esta entrega conserva apenas as quatro features e os relatórios locais da suíte atual; não há evidência de atualização ou execução das quatro histórias no Cucumber Studio. A validação indicada acima é do Cucumber.js local, não da plataforma.
+## Referências
 
 - Enunciado: exercicio-newsflow.pdf (fornecido à parte; não incluído no repositório).
 - Documentação oficial: https://cucumber.io/docs/installation/javascript/ e https://github.com/cucumber/cucumber-js.
-- Entrega externa: a pasta contém metadados Git locais, mas os relatórios não comprovam commit, remoto ou publicação. Verificar os requisitos de entrega em repositório separadamente.
