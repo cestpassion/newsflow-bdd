@@ -1,0 +1,17 @@
+{
+  "name": "newsflow-bdd-bruna",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exercício BDD do NewsFlow: quatro histórias, quatro funcionalidades e automação Cucumber.js.",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:dry": "cucumber-js --dry-run --format summary --format json:relatorios/dry-run.json --format html:relatorios/dry-run.html",
+    "test:parallel": "cucumber-js --parallel 2 --format summary --format json:relatorios/parallel.json --format html:relatorios/parallel.html"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "13.3.0"
+  }
+}

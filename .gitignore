@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+
+# Credenciais e configurações locais (manter somente o exemplo sem segredos).
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Artefatos locais não necessários à entrega.
+npm-debug.log*
+.npm/

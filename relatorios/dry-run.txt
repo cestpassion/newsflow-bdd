@@ -1,0 +1,8 @@
+
+> newsflow-bdd-bruna@1.0.0 test:dry
+> cucumber-js --dry-run --format summary --format json:relatorios/dry-run.json --format html:relatorios/dry-run.html
+
+
+23 scenarios (23 skipped)
+149 steps (149 skipped)
+0m 0.068s (0m 0.000s executing your code)

@@ -1,0 +1,2639 @@
+[
+  {
+    "description": "  Como redatora que inicia uma edição\n  Quero criar um rascunho que seja salvo automaticamente\n  Para não perder o conteúdo que estou escrevendo",
+    "elements": [
+      {
+        "description": "",
+        "id": "criar-e-salvar-o-rascunho-da-edição;criar-uma-edição-como-rascunho",
+        "keyword": "Cenário",
+        "line": 12,
+        "name": "Criar uma edição como rascunho",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "a redatora cria a edição \"News de novembro\" com o corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:44"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "a edição deve estar no estado \"rascunho\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "a autora da edição deve ser \"Ana\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:69"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "a quantidade de versões salvas deve ser 0",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 11
+          },
+          {
+            "name": "@smoke",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "criar-e-salvar-o-rascunho-da-edição;salvar-automaticamente-o-conteúdo-após-30-segundos",
+        "keyword": "Cenário",
+        "line": 19,
+        "name": "Salvar automaticamente o conteúdo após 30 segundos",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 20,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "a última versão deve conter o título \"News de novembro\" e o corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:75"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 23,
+            "name": "a quantidade de versões salvas deve ser 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "criar-e-salvar-o-rascunho-da-edição;salvar-a-alteração-no-próximo-ciclo-periódico-sem-esperar-30-segundos-de-inatividade",
+        "keyword": "Cenário",
+        "line": 26,
+        "name": "Salvar a alteração no próximo ciclo periódico sem esperar 30 segundos de inatividade",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 27,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 28,
+            "name": "que o relógio já avançou 45 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:12"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 29,
+            "name": "que a redatora já alterou o título para \"Título revisado\" e o corpo para \"Texto revisado\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:15"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "o relógio avança 15 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 31,
+            "name": "os números das versões mantidas devem ser \"1,2\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:81"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "a versão 1 deve conter o título \"News de novembro\" e o corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "a versão 2 deve conter o título \"Título revisado\" e o corpo \"Texto revisado\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 25
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "criar-e-salvar-o-rascunho-da-edição;a-primeira-edição-do-texto-não-reinicia-a-contagem-do-primeiro-ciclo",
+        "keyword": "Cenário",
+        "line": 36,
+        "name": "A primeira edição do texto não reinicia a contagem do primeiro ciclo",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 37,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 38,
+            "name": "que o relógio já avançou 15 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:12"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 39,
+            "name": "que a redatora já alterou o título para \"Título revisado\" e o corpo para \"Texto revisado\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:15"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 40,
+            "name": "o relógio avança 15 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 41,
+            "name": "a quantidade de versões salvas deve ser 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 42,
+            "name": "a última versão deve conter o título \"Título revisado\" e o corpo \"Texto revisado\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:75"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "criar-e-salvar-o-rascunho-da-edição;respeitar-o-intervalo-do-salvamento-automático",
+        "keyword": "Esquema do Cenário",
+        "line": 52,
+        "name": "Respeitar o intervalo do salvamento automático",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 46,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 47,
+            "name": "o relógio avança 29 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 48,
+            "name": "a quantidade de versões salvas deve ser 0",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@limite",
+            "line": 44
+          },
+          {
+            "name": "@excecao",
+            "line": 44
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "criar-e-salvar-o-rascunho-da-edição;respeitar-o-intervalo-do-salvamento-automático",
+        "keyword": "Esquema do Cenário",
+        "line": 53,
+        "name": "Respeitar o intervalo do salvamento automático",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 46,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 47,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 48,
+            "name": "a quantidade de versões salvas deve ser 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@limite",
+            "line": 44
+          },
+          {
+            "name": "@excecao",
+            "line": 44
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "criar-e-salvar-o-rascunho-da-edição;respeitar-o-intervalo-do-salvamento-automático",
+        "keyword": "Esquema do Cenário",
+        "line": 54,
+        "name": "Respeitar o intervalo do salvamento automático",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 46,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 47,
+            "name": "o relógio avança 31 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 48,
+            "name": "a quantidade de versões salvas deve ser 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@limite",
+            "line": 44
+          },
+          {
+            "name": "@excecao",
+            "line": 44
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "criar-e-salvar-o-rascunho-da-edição",
+    "line": 3,
+    "keyword": "Funcionalidade",
+    "name": "Criar e salvar o rascunho da edição",
+    "tags": [
+      {
+        "name": "@US01",
+        "line": 2
+      },
+      {
+        "name": "@RN01",
+        "line": 2
+      }
+    ],
+    "uri": "features\\us01-rascunho.feature"
+  },
+  {
+    "description": "  Como autora que acompanha o histórico de uma edição\n  Quero salvamentos numerados e limitados às 20 versões mais recentes\n  Para localizar alterações recentes sem perder a sequência do trabalho",
+    "elements": [
+      {
+        "description": "",
+        "id": "controlar-as-versões-da-edição;numerar-consecutivamente-cada-salvamento",
+        "keyword": "Cenário",
+        "line": 13,
+        "name": "Numerar consecutivamente cada salvamento",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 14,
+            "name": "que a edição já recebeu 2 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 15,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 16,
+            "name": "os números das versões mantidas devem ser \"1,2,3\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:81"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 12
+          },
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "controlar-as-versões-da-edição;não-reutilizar-números-mesmo-depois-de-descartar-a-primeira-versão",
+        "keyword": "Cenário",
+        "line": 19,
+        "name": "Não reutilizar números mesmo depois de descartar a primeira versão",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 20,
+            "name": "que a edição já recebeu 21 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "a quantidade de versões salvas deve ser 20",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 23,
+            "name": "a primeira versão mantida deve ser 3",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:85"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "a última versão mantida deve ser 22",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:88"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "a versão 22 deve conter o título \"Edição 21\" e o corpo \"Conteúdo 21\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@excecao",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "controlar-as-versões-da-edição;manter-somente-as-20-versões-mais-recentes",
+        "keyword": "Esquema do Cenário",
+        "line": 37,
+        "name": "Manter somente as 20 versões mais recentes",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 29,
+            "name": "que a edição já recebeu 18 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 31,
+            "name": "a quantidade de versões salvas deve ser 19",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "a primeira versão mantida deve ser 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:85"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "a última versão mantida deve ser 19",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:88"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@limite",
+            "line": 27
+          },
+          {
+            "name": "@excecao",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "controlar-as-versões-da-edição;manter-somente-as-20-versões-mais-recentes",
+        "keyword": "Esquema do Cenário",
+        "line": 38,
+        "name": "Manter somente as 20 versões mais recentes",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 29,
+            "name": "que a edição já recebeu 19 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 31,
+            "name": "a quantidade de versões salvas deve ser 20",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "a primeira versão mantida deve ser 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:85"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "a última versão mantida deve ser 20",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:88"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@limite",
+            "line": 27
+          },
+          {
+            "name": "@excecao",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "controlar-as-versões-da-edição;manter-somente-as-20-versões-mais-recentes",
+        "keyword": "Esquema do Cenário",
+        "line": 39,
+        "name": "Manter somente as 20 versões mais recentes",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 29,
+            "name": "que a edição já recebeu 20 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 31,
+            "name": "a quantidade de versões salvas deve ser 20",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:72"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "a primeira versão mantida deve ser 2",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:85"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "a última versão mantida deve ser 21",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:88"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@limite",
+            "line": 27
+          },
+          {
+            "name": "@excecao",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "controlar-as-versões-da-edição;preservar-o-conteúdo-de-uma-versão-ao-editar-o-rascunho",
+        "keyword": "Cenário",
+        "line": 42,
+        "name": "Preservar o conteúdo de uma versão ao editar o rascunho",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 43,
+            "name": "que o relógio já avançou 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:12"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 44,
+            "name": "a redatora altera o título para \"Título revisado\" e o corpo para \"Texto revisado\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:50"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 45,
+            "name": "a versão 1 deve conter o título \"News de novembro\" e o corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 46,
+            "name": "o conteúdo atual deve ter o título \"Título revisado\" e o corpo \"Texto revisado\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:97"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@alternativo",
+            "line": 41
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "controlar-as-versões-da-edição",
+    "line": 3,
+    "keyword": "Funcionalidade",
+    "name": "Controlar as versões da edição",
+    "tags": [
+      {
+        "name": "@US02",
+        "line": 2
+      },
+      {
+        "name": "@RN01",
+        "line": 2
+      }
+    ],
+    "uri": "features\\us02-versoes.feature"
+  },
+  {
+    "description": "  Como redatora que precisa desfazer uma alteração\n  Quero restaurar uma versão anterior ainda disponível\n  Para recuperar o conteúdo sem destruir mudanças posteriores",
+    "elements": [
+      {
+        "description": "",
+        "id": "restaurar-uma-versão-da-edição;recuperar-o-título-e-o-corpo-de-uma-versão-anterior",
+        "keyword": "Cenário",
+        "line": 13,
+        "name": "Recuperar o título e o corpo de uma versão anterior",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 14,
+            "name": "que a edição já recebeu 2 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 15,
+            "name": "a redatora restaura a versão 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:53"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 16,
+            "name": "o conteúdo atual deve ter o título \"Edição 1\" e o corpo \"Conteúdo 1\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:97"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 17,
+            "name": "a mensagem deve ser \"Versão restaurada\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:101"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 12
+          },
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "restaurar-uma-versão-da-edição;manter-as-versões-posteriores-à-versão-restaurada",
+        "keyword": "Cenário",
+        "line": 20,
+        "name": "Manter as versões posteriores à versão restaurada",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 21,
+            "name": "que a edição já recebeu 3 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 22,
+            "name": "a redatora restaura a versão 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:53"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 23,
+            "name": "os números das versões mantidas devem ser \"1,2,3\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:81"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "a versão 3 deve conter o título \"Edição 3\" e o corpo \"Conteúdo 3\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "o conteúdo atual deve ter o título \"Edição 1\" e o corpo \"Conteúdo 1\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:97"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@alternativo",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "restaurar-uma-versão-da-edição;salvar-o-conteúdo-restaurado-somente-no-próximo-ciclo-e-com-número-novo",
+        "keyword": "Cenário",
+        "line": 28,
+        "name": "Salvar o conteúdo restaurado somente no próximo ciclo e com número novo",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 29,
+            "name": "que a edição já recebeu 3 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 30,
+            "name": "que a redatora já restaurou a versão 1 sem criar outra versão",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:27"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 31,
+            "name": "o relógio avança 30 segundos",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:47"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 32,
+            "name": "os números das versões mantidas devem ser \"1,2,3,4\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:81"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "a versão 3 deve conter o título \"Edição 3\" e o corpo \"Conteúdo 3\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 34,
+            "name": "a versão 4 deve conter o título \"Edição 1\" e o corpo \"Conteúdo 1\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "restaurar-uma-versão-da-edição;impedir-a-restauração-de-uma-versão-que-saiu-do-histórico",
+        "keyword": "Cenário",
+        "line": 37,
+        "name": "Impedir a restauração de uma versão que saiu do histórico",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que \"Ana\" atua como \"redatora\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Texto inicial\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 38,
+            "name": "que a edição já recebeu 21 salvamentos automáticos com conteúdos diferentes",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 39,
+            "name": "que as versões 2 a 21 estão disponíveis antes da tentativa",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:33"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 40,
+            "name": "a redatora restaura a versão 1",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:53"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 41,
+            "name": "a mensagem deve ser \"Versão indisponível para restauração\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:101"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 42,
+            "name": "o conteúdo atual deve ter o título \"Edição 21\" e o corpo \"Conteúdo 21\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:97"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 43,
+            "name": "os números das versões mantidas devem ser \"2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:81"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 44,
+            "name": "a versão 2 deve conter o título \"Edição 2\" e o corpo \"Conteúdo 2\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 45,
+            "name": "a versão 21 deve conter o título \"Edição 21\" e o corpo \"Conteúdo 21\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:91"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 46,
+            "name": "o histórico deve permanecer inalterado",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:126"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03",
+            "line": 2
+          },
+          {
+            "name": "@RN01",
+            "line": 2
+          },
+          {
+            "name": "@excecao",
+            "line": 36
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "restaurar-uma-versão-da-edição",
+    "line": 3,
+    "keyword": "Funcionalidade",
+    "name": "Restaurar uma versão da edição",
+    "tags": [
+      {
+        "name": "@US03",
+        "line": 2
+      },
+      {
+        "name": "@RN01",
+        "line": 2
+      }
+    ],
+    "uri": "features\\us03-restauracao.feature"
+  },
+  {
+    "description": "  Como revisor editorial diferente da autora\n  Quero aprovar ou devolver uma edição com justificativa\n  Para assegurar uma decisão editorial independente e permitir correções rastreáveis",
+    "elements": [
+      {
+        "description": "",
+        "id": "avaliar-a-edição-na-revisão-editorial;submeter-um-rascunho-à-revisão",
+        "keyword": "Cenário",
+        "line": 12,
+        "name": "Submeter um rascunho à revisão",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "a redatora submete a edição à revisão",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:56"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "a edição deve estar no estado \"em_revisao\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "a edição não deve possuir aprovação registrada",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:113"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US04",
+            "line": 2
+          },
+          {
+            "name": "@RN02",
+            "line": 2
+          },
+          {
+            "name": "@parcial",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "avaliar-a-edição-na-revisão-editorial;aprovar-a-edição-por-um-revisor-diferente-da-autora",
+        "keyword": "Cenário",
+        "line": 18,
+        "name": "Aprovar a edição por um revisor diferente da autora",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 19,
+            "name": "que \"Bruno\" atua como \"revisor\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 20,
+            "name": "que a edição foi submetida à revisão",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:24"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "o revisor aprova a edição",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:59"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "a edição deve estar no estado \"aprovada\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 23,
+            "name": "a aprovação deve identificar o revisor \"Bruno\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:105"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "a mensagem deve ser \"Edição aprovada\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:101"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US04",
+            "line": 2
+          },
+          {
+            "name": "@RN02",
+            "line": 2
+          },
+          {
+            "name": "@parcial",
+            "line": 2
+          },
+          {
+            "name": "@feliz",
+            "line": 17
+          },
+          {
+            "name": "@smoke",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "avaliar-a-edição-na-revisão-editorial;bloquear-a-aprovação-pelo-próprio-autor-mesmo-que-tenha-papel-de-revisor",
+        "keyword": "Cenário",
+        "line": 27,
+        "name": "Bloquear a aprovação pelo próprio autor mesmo que tenha papel de revisor",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 28,
+            "name": "que \"Ana\" atua como \"revisor\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 29,
+            "name": "que a edição foi submetida à revisão",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:24"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "o revisor aprova a edição",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:59"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 31,
+            "name": "a mensagem deve ser \"O autor não pode aprovar a própria edição\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:101"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "a edição deve estar no estado \"em_revisao\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "a edição não deve possuir aprovação",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:109"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US04",
+            "line": 2
+          },
+          {
+            "name": "@RN02",
+            "line": 2
+          },
+          {
+            "name": "@parcial",
+            "line": 2
+          },
+          {
+            "name": "@excecao",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "avaliar-a-edição-na-revisão-editorial;devolver-a-edição-ao-rascunho-com-comentário-de-reprovação",
+        "keyword": "Cenário",
+        "line": 36,
+        "name": "Devolver a edição ao rascunho com comentário de reprovação",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 37,
+            "name": "que \"Bruno\" atua como \"revisor\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 38,
+            "name": "que a edição foi submetida à revisão",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:24"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 39,
+            "name": "o revisor reprova a edição com o comentário \"Corrigir a data do evento\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:62"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 40,
+            "name": "a edição deve estar no estado \"rascunho\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 41,
+            "name": "o comentário de reprovação deve ser \"Corrigir a data do evento\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:116"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 42,
+            "name": "a mensagem deve ser \"Edição devolvida ao rascunho\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:101"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US04",
+            "line": 2
+          },
+          {
+            "name": "@RN02",
+            "line": 2
+          },
+          {
+            "name": "@parcial",
+            "line": 2
+          },
+          {
+            "name": "@alternativo",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "avaliar-a-edição-na-revisão-editorial;bloquear-a-reprovação-sem-comentário",
+        "keyword": "Cenário",
+        "line": 45,
+        "name": "Bloquear a reprovação sem comentário",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 46,
+            "name": "que \"Bruno\" atua como \"revisor\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 47,
+            "name": "que a edição foi submetida à revisão",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:24"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 48,
+            "name": "o revisor reprova a edição com o comentário \"   \"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:62"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 49,
+            "name": "a mensagem deve ser \"Comentário de reprovação obrigatório\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:101"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 50,
+            "name": "a edição deve estar no estado \"em_revisao\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 51,
+            "name": "a edição não deve possuir comentário de reprovação",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:119"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US04",
+            "line": 2
+          },
+          {
+            "name": "@RN02",
+            "line": 2
+          },
+          {
+            "name": "@parcial",
+            "line": 2
+          },
+          {
+            "name": "@excecao",
+            "line": 44
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "avaliar-a-edição-na-revisão-editorial;rejeitar-comentário-vazio-sem-apagar-uma-justificativa-anterior",
+        "keyword": "Cenário",
+        "line": 54,
+        "name": "Rejeitar comentário vazio sem apagar uma justificativa anterior",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que existe uma edição da autora \"Ana\" com título \"News de novembro\" e corpo \"Novidades da Vértice\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:9"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 55,
+            "name": "que \"Bruno\" atua como \"revisor\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 56,
+            "name": "que a edição foi devolvida com o comentário \"Corrigir a data do evento\" e submetida novamente",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:37"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 57,
+            "name": "o revisor reprova a edição com o comentário \"\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:62"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 58,
+            "name": "a mensagem deve ser \"Comentário de reprovação obrigatório\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:101"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 59,
+            "name": "a edição deve estar no estado \"em_revisao\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 60,
+            "name": "o comentário de reprovação deve ser \"Corrigir a data do evento\"",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:116"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 61,
+            "name": "a revisão deve ser recusada",
+            "match": {
+              "location": "features\\step_definitions\\newsflow.steps.js:123"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US04",
+            "line": 2
+          },
+          {
+            "name": "@RN02",
+            "line": 2
+          },
+          {
+            "name": "@parcial",
+            "line": 2
+          },
+          {
+            "name": "@excecao",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "avaliar-a-edição-na-revisão-editorial",
+    "line": 3,
+    "keyword": "Funcionalidade",
+    "name": "Avaliar a edição na revisão editorial",
+    "tags": [
+      {
+        "name": "@US04",
+        "line": 2
+      },
+      {
+        "name": "@RN02",
+        "line": 2
+      },
+      {
+        "name": "@parcial",
+        "line": 2
+      }
+    ],
+    "uri": "features\\us04-revisao.feature"
+  }
+]
