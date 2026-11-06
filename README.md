@@ -41,6 +41,20 @@ Saída de `npm test` registrada em [`relatorios/execucao.txt`](relatorios/execuc
 
 `npm run test:dry` terminou com código 0: **23 cenários e 149 passos identificados**, marcados como `skipped` porque esse comando não executa os passos. O resultado de execução está no relatório [HTML](relatorios/cucumber-report.html) e no [JSON](relatorios/cucumber-report.json) de `npm test`.
 
+## Fora de escopo
+
+As quatro histórias concentram-se na criação, nas versões, na restauração e na revisão editorial da edição. Por isso, ficaram fora deste recorte:
+
+- **RN02 (envio e agendamento):** a aprovação editorial é coberta; o bloqueio de disparos sem aprovação depende do fluxo de envio.
+- **RN03 (agendamento):** horários, reagendamentos e cancelamentos pertencem ao fluxo do gestor.
+- **RN04 (segmentação):** seleção de segmentos e eliminação de envios duplicados dependem dos dados dos assinantes.
+- **RN05 (frequência):** o limite semanal exige histórico de entregas por assinante.
+- **RN06 (descadastro):** saída da lista e duplo opt-in pertencem à gestão de consentimento.
+- **RN07 (falhas de entrega):** novas tentativas e bounces dependem do processo de envio.
+- **RN08 (notificações):** janela de silêncio e limite diário pertencem ao fluxo de push.
+
+Os testes usam um serviço em memória; interface, autenticação real, persistência externa e envio efetivo não fazem parte deste exercício de automação BDD.
+
 ## Referências
 
 - Enunciado: exercicio-newsflow.pdf (fornecido à parte; não incluído no repositório).
