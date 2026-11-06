@@ -1,5 +1,7 @@
 # NewsFlow — histórias de usuário (US01–US04)
 
+**Dupla:** Bruna Furtado e Izadora Galarza.
+
 **Status:** `delivered` (suíte didática local, validada em 05/11/2026 com `npm run test:dry` e `npm test`; não equivale à entrega de um repositório publicado).  
 Enunciado: exercicio-newsflow.pdf (fornecido à parte; não incluído no repositório). Capítulos 02–04 e 07; o recorte desta suíte organiza quatro histórias.  
 **Escopo implementado:** rascunho, histórico e restauração de versões (RN01); submissão e decisão da revisão editorial (parte da RN02). Critérios abaixo correspondem às features locais em [`../features/`](../features/). Evidências: [`../relatorios/execucao.txt`](../relatorios/execucao.txt), [`../relatorios/cucumber-report.json`](../relatorios/cucumber-report.json) e [`../relatorios/cucumber-report.html`](../relatorios/cucumber-report.html): 23 cenários/149 passos aprovados; o [dry-run](../relatorios/dry-run.txt) reconheceu 23/149 sem executá-los.

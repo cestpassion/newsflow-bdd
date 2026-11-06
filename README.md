@@ -1,6 +1,6 @@
 # Sistema News / NewsFlow — BDD com Cucumber.js
 
-**Bruna | 05/11/2026**
+**Bruna Furtado e Izadora Galarza | 05/11/2026**
 
 Entrega didática de **quatro histórias (US01–US04)**, uma funcionalidade executável por história: rascunho, versões, restauração e revisão editorial. São **23 cenários executáveis e 149 passos**, conforme a execução local registrada em [`relatorios/execucao.txt`](relatorios/execucao.txt). Os cenários de esquema contam como casos distintos. Consulte [histórias, critérios e limites](docs/historias.md).
 
